@@ -1,0 +1,29 @@
+name: JobMenu
+main: Hebbinkpro\JobMenu\Main
+version: 0.0.1
+api: 3.15.0
+load: POSTWORLD
+author: Hebbinkpro
+description: Change your prefix
+
+depend:
+  - PureChat
+
+commands:
+
+permissions:
+  jm.command:
+    children:
+      jm.command.jobs:
+        default: true
+      jm.command.jobmenu:
+        default: OP
+  jm.add:
+    default: OP
+    description: add a job to a player
+  jm.remove:
+    default: OP
+    description: remove a job from a player
+  jm.check:
+    default: OP
+    description: check the jobs from a player
