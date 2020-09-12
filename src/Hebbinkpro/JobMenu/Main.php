@@ -35,8 +35,8 @@ class Main extends PluginBase implements Listener{
 
 		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, [
 		    "default_job" => "burger",
-            "max_jobs" => 2
-        ]);
+            	    "max_jobs" => 2
+        	]);
 
 		$this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
 
